@@ -1,0 +1,60 @@
+/* ==========================================Featured Products Home Page========================================= */
+
+/* .swiperproduct {
+    width: 99%;
+    height:580px;
+  } */
+  
+  /* .swiperproduct-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; */
+  
+    /* Center slide text vertically */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  
+  /* .swiperproduct-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+  #featureproductslidermain
+  {
+    width: 20%;
+    flex-wrap: wrap;
+  }
+
+  #featureproductslider
+  {
+    margin-top: 8px;
+    text-align: center;
+    /* font-size: 18px; */
+    background-color: whitesmoke;
+    border-radius: 20px;
+  }
+
+#featuredproductanswer
+{
+    display: flex;
+    margin-left: -90px;
+}
+
+.featureproductslider1
+{
+  background-color:whitesmoke;
+  border-radius: 15px;
+  width: 250px;
+  height: 420px;
+  margin-top: -32px;
+  margin-left: 100px; 
+}
+
+
+
+

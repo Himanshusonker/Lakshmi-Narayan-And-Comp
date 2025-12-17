@@ -1,0 +1,421 @@
+/* =================================================Website Animation Name=========================================== */
+
+/* .text-effect-wrapper,
+.text {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+} */
+
+/* .text-effect-wrapper { */
+  /* Can be anything light-colored */
+  /* --spotlight-color: white;
+
+  overflow: hidden;
+  position: relative; */
+
+  /* Shimmer animation */
+  /* &::before {
+    animation: shimmer 5s infinite linear;
+    background: 
+      radial-gradient(circle, var(--spotlight-color), transparent 25%) 0 0 / 25% 25%,
+      radial-gradient(circle, var(--spotlight-color), black 25%) 50% 50% / 12.5% 12.5%;
+    inset-block-start: -100%;
+    inset-inline-start: -100%;
+    mix-blend-mode: color-dodge;
+    z-index: 3;
+  } */
+
+  /* Extra filter to boost colors and contrast */
+  /* &::after {
+    backdrop-filter: blur(1px) brightness(90%) contrast(150%);
+    z-index: 4;
+  }
+} */
+
+/* @keyframes shimmer {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+.text { */
+  /* Mask colors */
+  /* Should be black and white */
+  /* --background-color: black;
+  --text-color: white; */
+
+  /* Text color */
+  /* Can be anything */
+  /* --color-1: red;
+  --color-2: blue; */
+
+  /* Fuzzy white outline text */
+  /* color: transparent;
+  text-shadow: 
+    0 0 0.02em var(--background-color), 
+    0 0 0.02em var(--text-color),
+    0 0 0.02em var(--text-color), 
+    0 0 0.02em var(--text-color); */
+
+  /* Improve contrast of outline */
+  /* &::before {
+    backdrop-filter: blur(0.013em) brightness(400%);
+    z-index: 1;
+  } */
+
+  /* Add text color */
+  /* &::after {
+    background: linear-gradient(45deg, var(--color-1), var(--color-2));
+    mix-blend-mode: multiply;
+    z-index: 2;
+  }
+} */
+
+/* Alternative styling */
+/* body:has(#option-toggle:checked) {
+  & .text-effect-wrapper {
+    --spotlight-color: orange;
+    
+    &::after {
+      backdrop-filter: brightness(90%) contrast(150%);
+    }
+  }
+
+  & .text {
+    --angle: 5deg;
+    --color-1: hsl(163, 100%, 51%);
+    --color-2: hsl(295, 88%, 32%);
+    --color-3: hsl(59, 100%, 50%);
+
+    text-shadow: 
+      0 0 0.03em var(--background-color),
+      0 0 0.03em var(--text-color);
+    
+    &::before {
+      backdrop-filter: brightness(150%) contrast(200%);
+    }
+
+    &::after {
+      background: linear-gradient(var(--angle), var(--color-1), var(--color-2), var(--color-3));
+      mix-blend-mode: color-dodge;
+    }
+  } 
+} */
+
+/* === Pen styling, ignore */
+
+/* h1 {
+  --font-size: clamp(6.25rem, 3.25rem + 15vw, 13.75rem);
+
+  font: 700 var(--font-size)/1 "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  &:empty,
+  &:focus {
+    border: 2px dotted white;
+    min-width: 1ch;
+    outline-offset: 5px;
+  }
+} */
+
+/* body {
+  background: black;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+} */
+
+/* label {
+  background-color: hsl(240deg, 20%, 50%);
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5em 1em;
+  
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  
+  &:has(:checked) {
+    background-color: hsl(350deg, 60%, 50%);
+  }
+} */
+                          /*  This input effect all input invisible */
+/* input {
+  position: absolute;
+  opacity: 0;
+} */
+
+
+
+/* ===================================================Slider Images================================================== */
+
+  /* .swiper {
+    width: 99%;
+    height:580px;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff; */
+  
+    /* Center slide text vertically */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+
+  .bannerimageslidermain
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .bannerimageslider
+  {
+    width: 100%;
+    height:610px;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  }  
+
+  .bannerimageslider img
+  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ============================================Heading Name Rotate========================================== */
+  /* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } */
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  @keyframes rotate {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+  
+  .rainbow {
+    position: relative;
+    z-index: 0;
+    width: 380px;
+    height: 80px;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 570px;
+    margin-top: -50px;
+    margin-top: 20px;
+    
+    
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      left: -50%;
+      top: -50%;
+      width: 200%;
+      height: 850%;
+      background-color: #399953;
+      background-repeat: no-repeat;
+      background-size: 50% 50%, 50% 50%;
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+      background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+      animation: rotate 1s linear infinite;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: 13px;
+      top: 10px;
+      width: calc(96.5% - 12px);
+      height: calc(89% - 12px);
+      background: white;
+      border-radius: 50px;
+    }
+  }
+
+/* ================================================Footer====================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+} */
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 300px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 130px;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+#footericon
+{
+  display: flex;
+  list-style-type: none;
+  font-size: 50px;
+}
+
+#footericon li
+{
+  margin: 50px;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
