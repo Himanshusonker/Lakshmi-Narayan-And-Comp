@@ -61,13 +61,6 @@ const Footer=()=>{
                                 </Link>
                     </div>
 
-                    <div className="facebookicon">
-                        <div className="facebooklink">  </div>
-                                <Link to="https://www.facebook.com/profile.php?id=61584288896198" id="facebooklink" >
-                                    <FaSquareFacebook/>  
-                                </Link>
-                    </div>
-
 
                 </div>
     
